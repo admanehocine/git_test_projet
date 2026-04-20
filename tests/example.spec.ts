@@ -17,6 +17,6 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
-test("login valide", async ({page})=>{
+test("login valide",{tag : ["@smok", "@login"]}, async ({page})=>{
   await page.goto("https://www.saucedemo.com/");
 })
